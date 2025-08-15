@@ -1,6 +1,6 @@
 from django.db import models
 
-class PesquisaABIMAQ(models.model):
+class PesquisaABIMAQ(models.Model):
      STATUS_CHOICES = (
         ('pendente', 'Pendente'),
         ('carregando', 'Carregando'),
