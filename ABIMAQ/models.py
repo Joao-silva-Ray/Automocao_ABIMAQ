@@ -12,3 +12,9 @@ class PesquisaABIMAQ(models.Model):
      status = models.CharField(choices=STATUS_CHOICES,default='pendente')
      caminho_resultado = models.CharField(max_length=250,null=True, blank=True)
      data_criacao = models.DateTimeField(auto_now_add=True)
+
+
+     def __str__(self):
+        return f'Pesquisa #{self.id} - {self.status}'
+     
+     
